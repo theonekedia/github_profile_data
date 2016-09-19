@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 
 class Repo extends Component {
 	render(){
-		const repo = this.props.repo;
+		const {repo} = this.props;
 		return(
 			<li className="list-group-item">
-				<a href={this.props.html_url}>
-					{this.props.name}
-				</a> : {this.props.description}
+				<a href={repo.html_url}>
+					{repo.name}
+				</a> : {repo.description}
 			</li>
 		)
 	}
